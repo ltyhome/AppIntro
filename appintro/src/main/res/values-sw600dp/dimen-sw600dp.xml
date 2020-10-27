@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <dimen name="appintro_desc_padding">24dp</dimen>
+    <dimen name="appintro_head_padding">24dp</dimen>
+    
+    <dimen name="appintro_headtext_size">36sp</dimen>
+    <dimen name="appintro_desctext_size">24sp</dimen>
+    <dimen name="appintro_textbutton_size">18sp</dimen>
+
+</resources>
