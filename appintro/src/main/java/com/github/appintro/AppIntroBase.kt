@@ -27,6 +27,7 @@ import androidx.fragment.app.Fragment
 import androidx.viewpager.widget.ViewPager
 import com.github.appintro.indicator.DotIndicatorController
 import com.github.appintro.indicator.IndicatorController
+import com.github.appintro.indicator.LineIndicatorController
 import com.github.appintro.indicator.ProgressIndicatorController
 import com.github.appintro.internal.AppIntroViewPager
 import com.github.appintro.internal.LayoutUtil
@@ -278,6 +279,10 @@ abstract class AppIntroBase : AppCompatActivity(), AppIntroViewPagerListener {
      */
     protected fun setProgressIndicator() {
         indicatorController = ProgressIndicatorController(this)
+    }
+
+    protected fun setLineIndicator() {
+        indicatorController = LineIndicatorController(this)
     }
 
     /**
