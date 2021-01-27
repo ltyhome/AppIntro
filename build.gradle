@@ -1,7 +1,7 @@
 buildscript {
 
     ext {
-        kotlin_version = System.getenv("VERSION_KOTLIN") ?: '1.4.10'
+        kotlin_version = System.getenv("VERSION_KOTLIN") ?: '1.4.21'
         agp_version = System.getenv("VERSION_AGP") ?: '4.1.0'
     }
 
