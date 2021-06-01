@@ -17,22 +17,22 @@ import com.github.appintro.R
 class LineIndicatorController(context: Context) : IndicatorController, LinearLayout(context) {
 
     override var selectedIndicatorColor =
-        ContextCompat.getColor(context, R.color.appintro_default_line_selected_color)
+        ContextCompat.getColor(context, R.color.appintro_line_selected_color)
         set(value) {
             field = value
             selectPosition(currentPosition)
         }
 
     override var unselectedIndicatorColor =
-        ContextCompat.getColor(context, R.color.appintro_default_line_selected_color)
+        ContextCompat.getColor(context, R.color.appintro_line_selected_color)
         set(value) {
             field = value
             selectPosition(currentPosition)
         }
     private val selectedIndicatorDrawable =
-        ContextCompat.getDrawable(this.context, R.drawable.ic_appintro_indicator_line_selected)
+        ContextCompat.getDrawable(this.context, R.drawable.ic_appintro_line_selected)
     private val unselectedIndicatorDrawable =
-        ContextCompat.getDrawable(this.context, R.drawable.ic_appintro_indicator_line)
+        ContextCompat.getDrawable(this.context, R.drawable.ic_appintro_line)
     private var currentPosition = 0
     private var slideCount = 0
 
@@ -53,7 +53,7 @@ class LineIndicatorController(context: Context) : IndicatorController, LinearLay
         for (i in 0 until slideCount) {
             val dot = ImageView(this.context)
             dot.setImageDrawable(
-                ContextCompat.getDrawable(this.context, R.drawable.ic_appintro_indicator_line)
+                ContextCompat.getDrawable(this.context, R.drawable.ic_appintro_line)
             )
             val params = LayoutParams(
                 LayoutParams.WRAP_CONTENT,
