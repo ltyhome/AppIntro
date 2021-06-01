@@ -1,11 +1,10 @@
 apply plugin: 'com.android.library'
 apply plugin: 'kotlin-android'
 apply plugin: 'maven-publish'
-apply plugin: 'org.jlleitschuh.gradle.ktlint'
 
 group = 'com.github.AppIntro'
 
-version = "6.1.3"
+version = "6.1.4"
 
 android {
     compileSdkVersion 30
@@ -43,26 +42,6 @@ repositories {
     mavenCentral()
     maven { url 'https://dl.bintray.com/kotlin/kotlin-eap' }
     maven { url 'https://kotlin.bintray.com/kotlinx' }
-}
-
-ktlint {
-    version = "0.39.0"
-    debug = false
-    verbose = true
-    android = false
-    outputToConsole = true
-    reporters {
-        reporter "json"
-    }
-    ignoreFailures = false
-    enableExperimentalRules = true
-    kotlinScriptAdditionalPaths {
-        include fileTree("scripts/")
-    }
-    filter {
-        exclude("**/generated/**")
-        include("**/kotlin/**")
-    }
 }
 
 task sourcesJar(type: Jar) {
