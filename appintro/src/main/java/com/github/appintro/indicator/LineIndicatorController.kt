@@ -10,23 +10,18 @@ import androidx.core.content.ContextCompat
 import androidx.core.graphics.drawable.DrawableCompat
 import com.github.appintro.R
 
+internal const val LINE_DEFAULT_COLOR = 1
+
 /**
  * An [IndicatorController] that shows a list of dots and highlight the selected dot.
  * Use this when the number of page you're dealing with is not too high.
  */
 class LineIndicatorController(context: Context) : IndicatorController, LinearLayout(context) {
 
-    override var selectedIndicatorColor = ContextCompat.getColor(context, R.color.appintro_default_line_selected_color)
-        set(value) {
-            field = value
-            selectPosition(currentPosition)
-        }
+    override var selectedIndicatorColor = LINE_DEFAULT_COLOR
 
-    override var unselectedIndicatorColor = ContextCompat.getColor(context, R.color.appintro_default_line_selected_color)
-        set(value) {
-            field = value
-            selectPosition(currentPosition)
-        }
+    override var unselectedIndicatorColor = LINE_DEFAULT_COLOR
+
     private val selectedIndicatorDrawable = ContextCompat.getDrawable(this.context, R.drawable.ic_appintro_indicator_line_selected)
     private val unselectedIndicatorDrawable = ContextCompat.getDrawable(this.context, R.drawable.ic_appintro_indicator_line)
     private var currentPosition = 0
@@ -48,9 +43,7 @@ class LineIndicatorController(context: Context) : IndicatorController, LinearLay
         this.slideCount = slideCount
         for (i in 0 until slideCount) {
             val dot = ImageView(this.context)
-            dot.setImageDrawable(
-                    ContextCompat.getDrawable(this.context, R.drawable.ic_appintro_indicator_line)
-            )
+            dot.setImageDrawable(unselectedIndicatorDrawable)
             val params = LayoutParams(
                     LayoutParams.WRAP_CONTENT,
                     LayoutParams.WRAP_CONTENT
