@@ -9,8 +9,8 @@
     <color name="appintro_default_fab_background_color">#59000000</color>
     <color name="appintro_icon_tint">#FFFFFF</color>
     <color name="appintro_default_unselected_color">#22000000</color>
-    <color name="appintro_default_selected_color">#FFFFFF</color>
-    <color name="appintro_default_line_selected_color">#F46E12</color>
+    <color name="appintro_selected_color">#FFFFFF</color>
+    <color name="appintro_line_selected_color">#F46E12</color>
     <color name="appintro_navbar_color">#000000</color>
     <color name="appintro_ripple_color">#1FFFFFFF</color>
 </resources>

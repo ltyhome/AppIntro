@@ -57,7 +57,7 @@ repositories {
 ```groovy
 dependencies {
     // AndroidX Capable version
-    implementation 'com.github.AppIntro:AppIntro:6.0.0'
+    implementation 'com.github.AppIntro:AppIntro:6.1.0'
     
     // *** OR ***
     
@@ -105,6 +105,8 @@ class MyCustomAppIntro : AppIntro() {
 ```
 
 Please note that you **must NOT call** setContentView. The `AppIntro` superclass is taking care of it for you.
+
+Also confirm that you're overriding `onCreate` with **a single parameter** (`Bundle`) and you're not using another override (like `onCreate(Bundle, PersistableBundle)`) instead.
 
 Finally, declare the activity in your Manifest like so:
 
@@ -581,9 +583,10 @@ If you are using AppIntro in your app and would like to be listed here, please o
 * [PrezziBenzina](https://play.google.com/store/apps/details?id=org.vernazza.androidfuel&hl=it)
 * [LogViewer for openHAB](https://github.com/cyb3rko/logviewer-for-openhab-app)
 * [Firmo con CIE](https://play.google.com/store/apps/details?id=com.cyberneid.disigoncie)
-* [FoodTable](https://play.google.com/store/apps/details?id=at.foodtable.app)
 * [iC-YOURLS](https://play.google.com/store/apps/details?id=net.inscomers.yourls)
 * [Secure File Manager](https://play.google.com/store/apps/details?id=com.securefilemanager.app)
 * [Noon Happen](https://play.google.com/store/apps/details?id=com.noonhappen.noonhappen)
+* [Alcapote](https://play.google.com/store/apps/details?id=com.casaconnex.alcapote)
+* [Weather Forecast](https://play.google.com/store/apps/details?id=com.ehlb.weatherapp)
 
 </details>

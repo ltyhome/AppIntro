@@ -16,7 +16,7 @@ import com.github.appintro.R
  */
 class DotIndicatorController(context: Context) : IndicatorController, LinearLayout(context) {
 
-    override var selectedIndicatorColor = ContextCompat.getColor(context, R.color.appintro_default_selected_color)
+    override var selectedIndicatorColor = ContextCompat.getColor(context, R.color.appintro_selected_color)
         set(value) {
             field = value
             selectPosition(currentPosition)
