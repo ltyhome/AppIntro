@@ -33,6 +33,7 @@ class DefaultIntro : AppIntro() {
                 "Feel free to explore the rest of the library demo!",
                 imageDrawable = R.drawable.ic_slide4
         ))
+        setLineIndicator()
     }
 
     public override fun onSkipPressed(currentFragment: Fragment?) {
