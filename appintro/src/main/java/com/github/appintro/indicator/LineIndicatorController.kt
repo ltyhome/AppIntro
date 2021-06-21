@@ -22,8 +22,8 @@ class LineIndicatorController(context: Context) : IndicatorController, LinearLay
 
     override var unselectedIndicatorColor = LINE_DEFAULT_COLOR
 
-    private val selectedIndicatorDrawable = ContextCompat.getDrawable(this.context, R.drawable.ic_appintro_indicator_line_selected)
-    private val unselectedIndicatorDrawable = ContextCompat.getDrawable(this.context, R.drawable.ic_appintro_indicator_line)
+    private val selectedIndicatorDrawable = ContextCompat.getDrawable(this.context, R.drawable.ic_appintro_line_selected)
+    private val unselectedIndicatorDrawable = ContextCompat.getDrawable(this.context, R.drawable.ic_appintro_line)
     private var currentPosition = 0
     private var slideCount = 0
 
