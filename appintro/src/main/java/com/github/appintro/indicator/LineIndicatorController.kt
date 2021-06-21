@@ -27,8 +27,8 @@ class LineIndicatorController(context: Context) : IndicatorController, LinearLay
 
     override fun newInstance(context: Context): View {
         val newLayoutParams = LayoutParams(
-            LayoutParams.WRAP_CONTENT,
-            LayoutParams.MATCH_PARENT
+                LayoutParams.WRAP_CONTENT,
+                LayoutParams.MATCH_PARENT
         )
         newLayoutParams.gravity = Gravity.CENTER_VERTICAL
         layoutParams = newLayoutParams
@@ -43,8 +43,8 @@ class LineIndicatorController(context: Context) : IndicatorController, LinearLay
             val dot = ImageView(this.context)
             dot.setImageDrawable(ContextCompat.getDrawable(this.context, R.drawable.ic_appintro_line))
             val params = LayoutParams(
-                LayoutParams.WRAP_CONTENT,
-                LayoutParams.WRAP_CONTENT
+                    LayoutParams.WRAP_CONTENT,
+                    LayoutParams.WRAP_CONTENT
             )
             params.leftMargin = resources.getDimensionPixelSize(R.dimen.appintro_indicator_inset)
             params.rightMargin = resources.getDimensionPixelSize(R.dimen.appintro_indicator_inset)
